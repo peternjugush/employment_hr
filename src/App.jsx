@@ -18,7 +18,7 @@ import Login from './components/Login';
 import Dashboard from './components/Dashboard';
 import LeaveForm from './components/LeaveForm';
 import DocumentManagement from './components/DocumentManagement';
-
+import AnalyticsChart from './components/AnalyticsChart';
 
 const App = () => {
   return (
@@ -39,6 +39,7 @@ const App = () => {
         <Route path="/dashboard" element={< Dashboard/>} />    
         <Route path="/leaveform" element={< LeaveForm/>} />    
         <Route path="/documentmanagement" element={< DocumentManagement/>} />    
+        <Route path="/analyticschart" element={< AnalyticsChart/>} />    
       </Routes>
       <Footer />
     </Router>

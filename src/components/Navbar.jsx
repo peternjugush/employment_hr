@@ -2,7 +2,7 @@ import {Link} from 'react-router-dom';
 
 const  Navbar = () => {
     return ( 
-        <nav className='bg-gray-800 py-4'>
+        <nav className='bg-gray-800 py-4 px-20'>
             <div className='container max-auto flex justify-between items-center'>
             <Link to="/login" className='text-white hover:text-green-300'>        <img className="size-16" src="src\assets\Grey Circle Frame Fashion Logo.png" alt="" /></Link>
             <ul className='flex space-x-4'>
@@ -22,10 +22,10 @@ const  Navbar = () => {
             <Link to="/payrollform" className='text-white hover:text-green-300'>Payroll</Link>   
             </li>
              <li>
-            <Link to="/dashboard" className='text-white hover:text-green-300'>Dashboard</Link>   
+            <Link to="/documentmanagement" className='text-white hover:text-green-300'>Documents</Link>   
             </li>
              <li>
-            <Link to="/documentmanagement" className='text-white hover:text-green-300'>Documents</Link>   
+            <Link to="/analyticschart" className='text-white hover:text-green-300'>analystics</Link>   
             </li>
             </ul>
             </div>

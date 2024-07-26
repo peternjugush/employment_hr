@@ -21,8 +21,8 @@ const DocumentManagement = () => {
     formData.append('file', selectedFile);
 
     try {
-      const response = await fetch('http://localhost:8000/api/documents/', {
-        method: 'POST',
+      const response = await fetch('http://127.0.0.1:8000/api/documents/', {
+        
         body: formData,
       });
 
@@ -57,6 +57,7 @@ const DocumentManagement = () => {
               <input
                 type="file"
                 id="file"
+                name='file'
                 onChange={handleFileChange}
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 required
